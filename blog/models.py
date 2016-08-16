@@ -17,5 +17,5 @@ class Post(models.Model): #models.Model: Post(클래스첫자는 대문자)가 �
         self.published_date = timezone.now()
         self.save()
  
-    def __str__(self): #얘를 호출하면 Post모델의 title을 얻음
+    def __unicode__(self): #얘를 호출하면 Post모델의 title을 얻음
         return self.title
